@@ -7,5 +7,5 @@ lokalise2 \
     --format $4 \
     --unzip-to $3
     --bundle-structure $5
-    --original-filenames=$6 
+    --original-filenames $6 
     --placeholder-format $7
