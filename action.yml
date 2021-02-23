@@ -1,0 +1,20 @@
+name: "lokalise-download-action"
+description: "Download files from lokalise"
+inputs:
+  lokalise-token: # id of input
+    description: "Your CLI/API token for Lokalise"
+    required: true
+  lokalise-project-id: # id of input
+    description: "Your project ID for Lokalise"
+    required: true
+  file-path: # id of input
+    description: "The path to the destination folder"
+    required: true
+  format: # id of input
+    description: "The format of the file you want to download"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/upload.sh ${{ inputs.lokalise-token }} ${{ inputs.lokalise-project-id }} ${{ inputs.file-path }} ${{ inputs.format }}
+      shell: bash
