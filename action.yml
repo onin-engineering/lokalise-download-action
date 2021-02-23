@@ -1,7 +1,8 @@
 name: "Lokalise Download"
 description: "Download files from lokalise"
-icon: "flag"
-color: "green"
+branding:
+  icon: "flag"
+  color: "green"
 inputs:
   lokalise-token: # id of input
     description: "Your CLI/API token for Lokalise"
