@@ -16,6 +16,18 @@ inputs:
   format: # id of input
     description: "The format of the file you want to download"
     required: true
+  bundle-structure: # id of input
+    description: "The bundle structure"
+    required: true
+    default: "/%LANG_ISO%.json"
+  original-filename:
+    description: "Use original filenames"
+    required: true
+    default: false
+  placeholder-format:
+    description: "Placeholder format of strings"
+    required: true
+    default: "i18n"
 runs:
   using: "composite"
   steps:
