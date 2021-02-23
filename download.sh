@@ -8,4 +8,4 @@ lokalise2 \
     --unzip-to $3 \
     --bundle-structure $5 \
     --original-filenames $6 \
-    --placeholder-format $7 \
+    --placeholder-format $7 

@@ -31,5 +31,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: ${{ github.action_path }}/download.sh ${{ inputs.lokalise-token }} ${{ inputs.lokalise-project-id }} ${{ inputs.file-path }} ${{ inputs.format }}
+    - run: ${{ github.action_path }}/download.sh ${{ inputs.lokalise-token }} ${{ inputs.lokalise-project-id }} ${{ inputs.file-path }} ${{ inputs.format }} ${{ inputs.bundle-structure }} ${{ inputs.original-filename }} ${{ inputs.placeholder-format }}
       shell: bash
